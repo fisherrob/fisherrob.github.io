@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+  <head id = head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>matrixsolver</title>
+  </head> 
+  <body style = "width: 70%; min-width: 1000px; margin: auto">
+    <div style="margin-left:auto;margin-right:auto;text-align:center;height:100px">
+      <head>
+      <h1> Linear Algebra</h1>
+      </head>
+    </div>
+    
+    
+    <div style = "position:absolute;top:0; bottom:0; left:0;
+    background:linear-gradient(to bottom right, #0EEEE9,#FFFFFF);
+    width:15%;border-style: outset; border-width: 2px;">
+      <p>
+        This site is a work in progress. <br></br> I will post any new linear algebra programs I make as time allows
+      </p>
+      <br><p style = "background: #C7C7C7;width: 65%;text-align: center;border: 1px solid black; border-radius: 15px;margin-left:auto;margin-right:auto"> 
+        System Of Equations
+      </p>
+      <p style = "background: #C7C7C7;width: 65%;text-align: center;border: 1px solid black; border-radius: 15px;margin-left:auto;margin-right:auto"> 
+        More options to come
+      </p>
+      <p> 
+        This is my first project with html and google dart so please excuse the ugly page.
+      </p>
+      <footer style = "size: 5; position: fixed; bottom: 0;"> ver 0.01</footer>
+    </div>
+ 
+ 
+    <div style="margin-left:auto;margin-right:auto;text-align:center;width: 75%">
+      <div class = "dropdown" style = "height:450px; width:75%;
+        border:1px solid black; border-radius: 15px; margin-left:auto;margin-right:auto;
+        background:linear-gradient(to bottom right, #0EEEE2,#FFFFFF);">
+        <h1 style="text-align:center;">System of Equation Solver</h1>
+        <p> Please choose the number of equations you have: </p> 
+        <p style = "font-size: 75%"> (This program will only work if the number of equations is equal to the number of variables) </p>  
+        <select id = "equationNum" 
+        value="{{numEquations}}">
+          <option>0</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+    
+    
+        <div id = "equations" style = "margin-left:auto;margin-right:auto;width: 65%" hidden>
+          <p id = "check"> 
+            If this looks like your system press submit </p>
+          <p id="system"> </p>
+        <button id = "submit" hidden>Submit</button>
+        </div>
+      </div>
+    </div>
+    <script type="application/dart" src="systemsolver.dart"></script>
+    <script src="packages/browser/dart.js"></script>
+  </body>
+</html>
